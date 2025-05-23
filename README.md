@@ -1,19 +1,16 @@
+# 🎬 Imagem para Vídeo Cinematográfico com Estilo (CogVideoX-5B-I2V via Google Colab)
 
-# 🎬 Imagem para Vídeo Cinematográfico com Estilo (Google Colab)
-
-Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **Stable Video Diffusion** com uma interface interativa Gradio. Perfeito para criar animações com estilo "filme", "anime", "pintura artística", e muito mais — tudo grátis e sem instalar nada!
+Gera vídeos curtos e cinematográficos a partir de **uma imagem estática + um prompt descritivo**, usando o modelo de última geração **CogVideoX-5B-I2V** diretamente no Google Colab com GPU. Ideal para criar cenas realistas com controle total do conteúdo textual e visual.
 
 ---
 
 ## 🚀 Funcionalidades
 
-✨ Geração de vídeo automática a partir de imagens  
-🎨 Escolha de estilos visuais (ex: anime, pintura, cinematográfico)  
-🕹️ Movimento de câmara (zoom, pan) configurável  
-🎬 Duração e FPS por clipe ajustáveis  
-🎼 Música de fundo personalizável  
-💬 Legendas por imagem (opcional)  
-🎞️ Vídeo final em MP4 com download direto  
+🎞️ Geração de vídeo realista a partir de imagem + texto  
+🎨 Controle por prompt descritivo (ex: “a sunset over the ocean”)  
+⚙️ Otimizado para rodar em Colab com GPU T4  
+💾 Download direto do vídeo final em `.mp4`  
+🎛️ Interface gráfica interativa com Gradio  
 
 ---
 
@@ -29,32 +26,29 @@ Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **
 
 1. Torna este repositório **temporariamente público** (ver instruções abaixo)
 2. Clica no botão “Abrir no Colab” acima
-3. Sobe as tuas imagens e preenche os parâmetros:
-   - Estilo (ex: `cinematic`, `anime watercolor`)
-   - Duração por clipe
-   - FPS
-   - Legenda por imagem (opcional)
-4. Gera os vídeos
-5. Faz o download do MP4 final
-6. Torna o repositório **privado novamente** (opcional)
+3. Faz login com token Hugging Face
+4. Sobe uma imagem e insere o prompt textual (ex: “waves crashing under the moonlight”)
+5. Gera o vídeo
+6. Faz o download do `.mp4` final
+7. Torna o repositório **privado novamente** (opcional)
 
 ---
 
 ## ⚙️ Verificar GPU no Google Colab
 
-O modelo usa a GPU para gerar vídeos com qualidade. Certifica-te que tens uma **T4 ou superior** ativa.
+Este modelo exige uma GPU com pelo menos **12 GB de VRAM (T4 ou superior)**.
 
 ### 🔍 Como confirmar:
 
-1. No Colab, vai a **Ambiente de execução > Alterar tipo de ambiente de execução**
-2. Em **Acelerador de hardware**, escolhe: `GPU`
-3. Executa a célula abaixo para verificar a GPU:
+1. Vai em **Ambiente de execução > Alterar tipo de ambiente de execução**
+2. Escolhe **GPU** como acelerador
+3. Executa:
 
 ```python
 !nvidia-smi
 ```
 
-Se vires `Tesla T4` ou superior — estás pronto para gerar vídeos com desempenho ideal 🚀
+Se vires `Tesla T4` ou superior, estás pronto para gerar vídeos realistas 🎬
 
 ---
 
@@ -73,14 +67,12 @@ Se vires `Tesla T4` ou superior — estás pronto para gerar vídeos com desempe
 2. Clica em **“Change repository visibility”**
 3. Seleciona **Private** e confirma
 
-> 🔒 Isto é 100% seguro. Apenas tu tens acesso como dono do repositório.
-
 ---
 
 ## 📄 Licença
 
 Este projeto é apenas para uso pessoal e educacional.  
-Baseado em modelos da [Stability AI](https://stability.ai) e bibliotecas open source.
+Baseado no modelo CogVideoX da [THUDM](https://huggingface.co/THUDM/CogVideoX-5b-I2V) e bibliotecas open source.
 
 ---
 
