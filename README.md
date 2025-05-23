@@ -21,7 +21,7 @@ Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **
 
 > ⚠️ O repositório deve estar **público** para este botão funcionar
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ilhavo/imagem-para-video/blob/main/imagem_para_video_filme_PERFEITO.ipynb)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ilhavo/imagem-para-video/blob/main/imagem_para_video_filme.ipynb)
 
 ---
 
