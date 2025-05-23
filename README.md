@@ -21,7 +21,7 @@ Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **
 
 > ⚠️ O repositório deve estar **público** para este botão funcionar
 
-[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ilhavo/imagem-para-video/blob/main/imagem_para_video_filme.ipynb)
+[![Abrir no Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ilhavo/imagem-para-video/blob/main/imagem_para_video_filme_PERFEITO.ipynb)
 
 ---
 
@@ -37,6 +37,24 @@ Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **
 4. Gera os vídeos
 5. Faz o download do MP4 final
 6. Torna o repositório **privado novamente** (opcional)
+
+---
+
+## ⚙️ Verificar GPU no Google Colab
+
+O modelo usa a GPU para gerar vídeos com qualidade. Certifica-te que tens uma **T4 ou superior** ativa.
+
+### 🔍 Como confirmar:
+
+1. No Colab, vai a **Ambiente de execução > Alterar tipo de ambiente de execução**
+2. Em **Acelerador de hardware**, escolhe: `GPU`
+3. Executa a célula abaixo para verificar a GPU:
+
+```python
+!nvidia-smi
+```
+
+Se vires `Tesla T4` ou superior — estás pronto para gerar vídeos com desempenho ideal 🚀
 
 ---
 
@@ -56,11 +74,6 @@ Gera vídeos curtos e cinematográficos a partir de imagens estáticas usando **
 3. Seleciona **Private** e confirma
 
 > 🔒 Isto é 100% seguro. Apenas tu tens acesso como dono do repositório.
-
----
-
-## 📸 Exemplo (opcional)
-Podes adicionar aqui um screenshot ou GIF de como é a interface no Colab.
 
 ---
 
